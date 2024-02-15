@@ -9,12 +9,16 @@ namespace Engine.ViewModels
 {
     public class GameSession
     {
-        Player CurrentPlayer { get; set; }
+        public Player CurrentPlayer { get; set; }
         public GameSession()
         {
             CurrentPlayer = new Player();
             CurrentPlayer.Name = "Hilde";
+            CurrentPlayer.CharacterClass = "Fighter";
+            CurrentPlayer.HitPoints = 10;
             CurrentPlayer.Gold = 1000000;
+            CurrentPlayer.ExperiencePoints = 0;
+            CurrentPlayer.Level = 1;
         }
     }
 }
